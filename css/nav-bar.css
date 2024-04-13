@@ -1,0 +1,45 @@
+.navBarCss{
+    position: fixed;           
+    background-color: white;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 40px;
+    top:0px;
+    
+    }
+.navBarCss a{
+    position: relative;
+    top:0px;
+    left:15%;
+    text-decoration: none;
+    width:50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    
+    
+}
+.navBarCss a img{
+    width: 21.6px;
+    align-self: flex-start;
+    color: var(--brand-color);
+}
+#logo{
+    position:relative;
+    top:5%;
+    left:15%;
+}
+a:visited{
+    color: black;
+}
+
+a.current-page{
+    color: var(--primary-color);
+    font-weight:600;
+    fill:var(--primary-color)
+}
+

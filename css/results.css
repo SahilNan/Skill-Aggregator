@@ -1,0 +1,214 @@
+
+#options-container{
+    position: relative;
+    top:15%;
+    left:20%;
+    width:75%;
+    height:40%;
+    background-color: white;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+.options{
+    width:100%;
+    
+}
+
+.text-label{
+    position: absolute;
+    top:1%;
+    left:2%;
+}
+#search-bar{
+    position: absolute;
+    left:2%;
+    top:40%;
+   
+    width:50%;
+    height: 18%;
+
+    border-radius: 4px;
+    border: 2px solid var(--faint-gray);
+
+    color:rgb(51, 50, 50);
+    font-size: 17px;
+    letter-spacing: 0.3px;
+   
+}
+#search-bar:focus{
+    outline: none;
+    border: 3px solid var(--primary-color);
+
+}
+#domain-selector{
+    position:absolute;
+    top:40%;
+    left:54%;
+    height:18%;
+    width: 15%;
+    background-color: white;
+    border: 2px solid var(--faint-gray);
+    border-radius: 4px;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+#domain-selector:focus{
+    outline: none;
+    border: 3px solid var(--primary-color);
+
+}
+
+.multi-select{
+    position: absolute;
+    top:40%;
+    left:71%;
+    width:15%;
+    height:18%;
+    display: inline-block;
+    border: 2px solid var(--faint-gray);
+    border-radius: 4px;
+}
+.multi-select:focus{
+    border: 3px solid var(--primary-color);
+
+
+}
+.select-box{
+    height: 100%;
+    display: flex;
+    column-gap: 10px;
+    
+}
+.select-box img{
+    width: 15px;
+    padding-left: 40%;
+}
+.options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    width: calc(100%); /* Adjusted width to accommodate scrollbar */
+    box-sizing: border-box; /* Ensures the width includes padding and border */
+  }
+
+.option {
+    padding: 5px;
+    cursor: pointer;
+}
+.addbox {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+
+
+#search-btn{
+    position: absolute;
+    top:80%;
+    left:2%;
+    width:80px;
+    height:40px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: 2px solid var(--faint-gray);
+    cursor: pointer;
+    color:white;
+    font-size: 17px;
+}
+
+#results-container{
+    
+    position: relative;
+    top:20%;
+    left:20%;
+    width:75%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.job-card{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 4px;
+    height:350px
+}
+.job-title{
+    font-size: 18px;
+    font-weight:600;
+    padding-left: 5px;
+}
+
+.company-name{
+    font-size:15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.job-skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 2px solid black;
+    column-gap: 4px;
+    row-gap: 4px;
+    padding-top: 10px;
+}
+
+.job-skills p{
+    background-color: var(--primary-color);
+    color:white;
+    margin: 0px;
+    border-radius: 4px;
+    text-align: center;
+    padding:3px;
+    vertical-align:middle;
+    font-size: 12px;
+}
+
+#skill-bar{
+    position: relative;
+    top:60%;
+    
+    display:flex;
+    flex-direction: row;
+    padding-left: 2%;
+    column-gap: 10px;
+}
+
+.skill-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight:600;
+    border: 1px solid var(--primary-color);
+    border-radius: 9px;
+
+}
+.x-btn{
+    width: 20px;
+    cursor: pointer;
+}
+.skill-display p {
+    margin: 0px;
+    padding:4px;
+}
+.search-boxer{
+    width:100%;
+    border: solid var(--faint-gray) 2px;
+    height:30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.search-boxer:focus{
+    border-color: var(--primary-color);
+    outline: none;
+}
